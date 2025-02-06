@@ -1,0 +1,111 @@
+/* 重置一些默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* 背景图片 */
+.background {
+    /* 替换为您的背景图片路径 */
+    background-image: url('background-image.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    /* 添加一个半透明的黑色覆盖层以增强文本可读性 */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 内容区域填满窗口 */
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    /* 半透明背景 */
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* 顶部内容 */
+.top-section {
+    text-align: center;
+    padding-top: 80px; /* 调整此值以控制顶部位置 */
+}
+
+.top-section h1 {
+    font-size: 3em;
+    margin-bottom: 40px; /* 增大标题和段落之间的间距 */
+}
+
+.top-section p {
+    font-size: 1.2em;
+}
+
+/* 底部内容 */
+.bottom-section {
+    text-align: center;
+    padding-bottom: 50px; /* 调整此值以控制底部位置 */
+}
+
+.button-container {
+    margin-bottom: 20px; /* 按钮和感谢文本之间的间距 */
+    /* 加深的半透明背景 */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #ff6347;
+}
+
+.credit-container {
+    /* 加深的半透明背景 */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    /* 使其填满左右 */
+    width: 100%;
+    max-width: 600px; /* 可根据需要调整 */
+}
+
+.credit {
+    font-size: 0.9em;
+}
+
+.credit a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.credit a:hover {
+    color: #ff6347;
+}
